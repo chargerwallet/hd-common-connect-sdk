@@ -1,0 +1,29 @@
+{
+  "name": "@chargerwallet/hd-common-connect-sdk",
+  "version": "2.0.0",
+  "author": "ChargerWallet",
+  "homepage": "https://github.com/chargerwallet/hd-common-connect-sdk",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chargerwallet/hd-common-connect-sdk.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "rimraf dist && rollup -c ../../build/rollup.config.js -w",
+    "build": "rimraf dist && rollup -c ../../build/rollup.config.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "hd-core": "^2.0.0",
+    "hd-shared": "^2.0.0",
+    "@chargerwallet/hd-transport-http": "^2.0.0",
+    "@chargerwallet/hd-transport-lowlevel": "^2.0.0",
+    "@chargerwallet/hd-transport-webusb": "^2.0.0"
+  }
+}
